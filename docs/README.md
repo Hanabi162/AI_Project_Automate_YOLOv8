@@ -30,7 +30,7 @@
   - **read_images(input_folder):** Continuously reads images from the input folder and processes them.
   - **choose_model(cctv_id, image_path, source_name):** Finds the appropriate YOLO model name and confidence from the database using the CCTV ID and retrieves the corresponding model file from the model folder.
   - **find_model_file(model_param_code, model_folder):** Searches for the YOLO model file in the specified model folder based on the model parameter code retrieved from the database.
-  - **predict_loop(model_ocr, image_path, cctv_id, source_name, v_conf):** Executes predictions using the selected model and parameters.
+  - **predict_loop(model_ocr, cctv_id, v_conf):** Executes predictions using the selected model and parameters.
 - **Class:**
   - **DetectionPredictorDB:** Custom YOLO predictor class that processes predictions and saves results to the database.
 
@@ -40,7 +40,7 @@
   - **read_images(input_folder):** Continuously reads images from the input folder and processes them.
   - **choose_model(cctv_id, image_path, source_name):** Finds the appropriate YOLO model name and confidence from the database using the CCTV ID and retrieves the corresponding model file from the model folder.
   - **find_model_file(model_param_code, model_folder):** Searches for the YOLO model file in the specified model folder based on the model parameter code retrieved from the database.
-  - **predict_loop(model_ocr, image_path, cctv_id, source_name, v_conf):** Executes predictions using the selected model and parameters.
+  - **predict_loop(model_ocr, cctv_id, v_conf):** Executes predictions using the selected model and parameters.
 - **Class:**
   - **SegmentationPredictorDB:** Custom YOLO predictor class for segmentation that processes predictions, applies masks, and saves results to the database.
 
