@@ -7,7 +7,7 @@ from ultralytics.models.yolo.detect.predict import DetectionPredictor
 from ultralytics.engine.results import Results
 from ultralytics.utils import ops
 from ultralytics.utils import DEFAULT_CFG, ops
-# I don't want to show the database connection details in this script on GitHub even if it is called through another file.
+# Database connection details are not shown in this script.
 
 # Input
 input_folder = r"your_Path" # A folder to store all your photos.
@@ -44,7 +44,7 @@ def read_images(input_folder):
             print("This folder doesn't actually exist.")
             break
 
-# Function to select model from database, refer to CCTV, predict result and delete image.
+# Function to select model and confidence from database, refer to CCTV, predict result and delete image.
 def choose_model(cctv_id, image_path, source_name):
     try:
         cnxn = pyodbc.connect('Do Not Show Connection Details')
