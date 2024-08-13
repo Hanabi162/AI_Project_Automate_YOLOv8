@@ -318,6 +318,7 @@ class BasePredictor:
     def write_results(self, i, p, im, s):
         """Write inference results to a file or directory."""
         string = ""  # print string
+
         if len(im.shape) == 3:
             im = im[None]  # expand for batch dim
         if self.source_type.stream or self.source_type.from_img or self.source_type.tensor:  # batch_size >= 1
