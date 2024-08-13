@@ -1,7 +1,7 @@
 ## README
 
 ### Overview
-- This project includes two scripts for image processing using YOLO models: one for bounding box detection and another for segmentation tasks. Both scripts perform predictions on images from a specified folder and save the results to a database. The models used are selected based on CCTV camera IDs stored in a database, and the confidence values for predictions are also retrieved from the database.
+- This project includes two scripts for image processing using YOLO models: one for bounding box detection and another for segmentation tasks. Both scripts perform predictions on images from a specified folder and save the results to a database. The models used are selected based on CCTV camera IDs stored in a database, and the confidence values for predictions are also retrieved from the database. The primary objective of this project is to extract class labels, counts of each class, and the total number of detections from the images. These extracted values are then recorded into the database for further analysis and tracking.
 
 ### Prerequisites
 - Python 3.x
