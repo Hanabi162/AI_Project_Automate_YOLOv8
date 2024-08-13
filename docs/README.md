@@ -17,8 +17,8 @@
 - **save_to_project:** Directory to save prediction results.
 - **name_new_folder:** Subdirectory name for saving images.
 - **v_save:** Boolean flag to save prediction images.
-- **v_conf:** Confidence threshold for predictions (default: 0.70, retrieved from database).
-- **v_iou:** IoU threshold for non-maximum suppression (default: 0.45).
+- **v_conf:** Confidence threshold for predictions (retrieved from database or configuration).
+- **v_iou:** IoU threshold for non-maximum suppression (currently set to 0.7, but may be adjusted as needed). 
 - **v_exite:** Boolean flag for saving all predictions in one folder.
 - **image_size:** Size of the images for YOLO (640x640).
 
