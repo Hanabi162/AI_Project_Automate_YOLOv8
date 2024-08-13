@@ -6,7 +6,9 @@ from collections import Counter
 from ultralytics.engine.predictor import BasePredictor
 from ultralytics.engine.results import Results
 from ultralytics.utils import ops
-# Database connection details are not shown in this script.
+# Database connection details are not included in this script for security reasons.
+# Ensure to create an environment (.env) file to store sensitive configuration settings.
+# Use a library like `python-dotenv` to load these settings securely in your application.
 
 # Input
 input_folder = r"your_Path" # A folder to store all your photos.
