@@ -158,7 +158,7 @@ class DetectionPredictorDB(BasePredictor):
         return results 
 
 # Function to call and pass parameters to the prediction class.
-def predict_loop(model_ocr, cctv_id,v_conf):
+def predict_loop(model_ocr, cctv_id, v_conf):
     print(f"Confident : {v_conf}")
     args = dict(model=model_ocr, conf=v_conf, iou=v_iou, save=v_save, project=save_to_project, name=name_new_folder, exist_ok=v_exite, imgsz=image_size)
     predictor = DetectionPredictorDB(overrides=args, cctv_id=cctv_id)
