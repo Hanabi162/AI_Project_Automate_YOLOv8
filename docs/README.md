@@ -47,10 +47,10 @@
 ### Example Usage
 - To start processing images with bounding box detection, run:
   ```bash
-  python Project_Detection.py
+  python Detection_Algorithm.py
 - To start processing images with segmentation, run:
    ```bash
-  python Project_Segmentaion.py
+  python Segmentation_Algorithm.py
 
 <br>
 <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320">
