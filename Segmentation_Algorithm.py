@@ -165,6 +165,8 @@ class SegmentationPredictorDB(DetectionPredictor):
                 pred[:, :4] = ops.scale_boxes(img.shape[2:], pred[:, :4], orig_img.shape)
 
             results.append(Results(orig_img, path=img_path, names=self.model.names, boxes=pred[:, :6], masks=masks))
+        cursor.close()
+        cnxn.close()
         return results
 
 # Function to call and pass parameters to the prediction class.
